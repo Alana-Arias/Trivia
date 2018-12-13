@@ -338,6 +338,7 @@ public class FrmJuego extends javax.swing.JFrame {
         
         if(indice>=0){
             JOptionPane.showMessageDialog(null, jCboCatJug1.getSelectedItem());
+            JOptionPane.showMessageDialog(null, "Recuerde, que no pueden seleccionar la misma categoria");
             jBtnNomJug1.setEnabled(true);
         }
         else{
@@ -365,7 +366,7 @@ public class FrmJuego extends javax.swing.JFrame {
         else{
             JOptionPane.showMessageDialog(null, "No ha seleccionado ninguna categoria");           
         }  
-        JOptionPane.showMessageDialog(null, "Recuerde, que no pueden seleccionar la misma categoria");
+        
         JOptionPane.showMessageDialog(null, "Debe seleccionar el botón Empezar, para iniciar el juego");
         jBtnEmpezarPreguntas.setEnabled(true);
     }//GEN-LAST:event_jBtnNomJug2ActionPerformed

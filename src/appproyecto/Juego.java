@@ -38,7 +38,7 @@ public class Juego {
                                         new String []{"Despacito", "Believer", "Wolves"}, 0);
         preguntas[1][2]= new Pregunta(3, "A que banda pertenece Girls like you", 
                                         new String [] {"Coldplay", "Maroon 5", "Imagine Dragons"}, 1);
-        preguntas[1][3]= new Pregunta(4, "¿Cúal cantante utilizó un vestid de carne?", 
+        preguntas[1][3]= new Pregunta(4, "¿Cúal cantante utilizó un vestido de carne?", 
                                         new String []{"Katy Perry", "Miley Cyrus", "Lady Gaga"}, 2);
         preguntas[1][4]= new Pregunta(5, "¿Cuál artista canta Flor Pálida?", 
                                         new String []{"Romeo Santos", "Carlos Vives", "Marc Anthony"}, 2);
