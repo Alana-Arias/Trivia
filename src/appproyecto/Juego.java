@@ -9,6 +9,7 @@ public class Juego {
     private int indice;
     private int correctas;
     private Pregunta asignar;
+    private static int cantJug;
     
     public Juego() {
         

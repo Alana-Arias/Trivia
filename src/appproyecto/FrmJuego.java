@@ -493,7 +493,7 @@ public class FrmJuego extends javax.swing.JFrame {
             alternar=false;
             }
             else{
-              JOptionPane.showMessageDialog(null, (jug2.respuestaCorrecta(indice)==false?"Respuesta Correcta": "Respuesta Incorrecta"));
+              JOptionPane.showMessageDialog(null, (jug2.respuestaCorrecta(indice)==true?"Respuesta Correcta": "Respuesta Incorrecta"));
               jCboRespuestas.removeAllItems();
               jBtnEmpezarPreguntas.doClick();
               jCboRespuestas.requestFocus(); 
