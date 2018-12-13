@@ -379,8 +379,12 @@ public class FrmJuego extends javax.swing.JFrame {
     }//GEN-LAST:event_jCboCatJug2ActionPerformed
 
     private void jBtnCalificacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCalificacionesActionPerformed
-        
-            jTxAGanadores.setText(jug1.toString());
+            jTxAGanadores.setText("");
+            jTxAGanadores.setText("El puntaje de " + jTxtNomJug1.getText() +   
+                    " es de: " + String.valueOf(jug2.getPuntajeP())+"\n"+
+                    "El puntaje de " + jTxtNomJug2.getText() +   
+                    " es de: " + String.valueOf(jug1.getPuntajeP())
+            );
         
     }//GEN-LAST:event_jBtnCalificacionesActionPerformed
 
@@ -493,7 +497,7 @@ public class FrmJuego extends javax.swing.JFrame {
             alternar=false;
             }
             else{
-              JOptionPane.showMessageDialog(null, (jug2.respuestaCorrecta(indice)==false?"Respuesta Correcta": "Respuesta Incorrecta"));
+              JOptionPane.showMessageDialog(null, (jug2.respuestaCorrecta(indice)==true?"Respuesta Correcta": "Respuesta Incorrecta"));
               jCboRespuestas.removeAllItems();
               jBtnEmpezarPreguntas.doClick();
               jCboRespuestas.requestFocus(); 

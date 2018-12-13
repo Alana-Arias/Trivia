@@ -9,6 +9,8 @@ public class Juego {
     private int indice;
     private int correctas;
     private Pregunta asignar;
+    private int puntajeP1 = 0;
+
     
     public Juego() {
         
@@ -99,6 +101,7 @@ public class Juego {
         if(this.preguntas[indice][posPre].getRespCorrecta()==asignaRes){
             correctas++;
             preguntas[indice][posPre].setRespCorrecta(getCorrectas());
+            setPuntajeP(getPuntajeP()+1);
             men=true;
         }
         else{
@@ -140,5 +143,15 @@ public class Juego {
     public int getCorrectas() {
         return correctas;
     }
+    
+        public int getPuntajeP() {
+        return puntajeP1;
+    }
+
+    public void setPuntajeP(int puntajeP1) {
+        this.puntajeP1 = puntajeP1;
+    }
+
+ 
     
 }
